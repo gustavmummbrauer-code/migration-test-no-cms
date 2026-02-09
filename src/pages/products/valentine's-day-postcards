@@ -1,0 +1,109 @@
+---
+title: "Real Estate Valentine Postcards"
+price: "$1.04"
+slug: "valentines-day-postcards"
+route: "/products/postcards/valentines-day-postcards"
+
+seoTitle: "Real Estate Valentine Postcards | Wise Pelican"
+seoDescription: "Charming Valentine postcards for REALTORS® with all-inclusive printing and mailing. Stay top of mind and generate leads this Valentine’s Day."
+
+breadcrumbs:
+  - label: "Home"
+    href: "/"
+  - label: "Postcards"
+    href: "/products/postcards"
+  - label: "Real Estate Postcards"
+    href: "/products/postcards/real-estate"
+  - label: "Real Estate Valentine Postcards"
+
+categories:
+  - label: "Postcards"
+    href: "/products/postcards"
+  - label: "Real Estate Postcards"
+    href: "/products/postcards/real-estate"
+
+images:
+  - src: "/images/products/valentines-day-postcards/valentines-day-postcards-1.webp"
+    alt: "Valentine real estate postcard front design"
+  - src: "/images/products/valentines-day-postcards/valentines-day-postcards-2.webp"
+    alt: "Back of Valentine real estate postcard"
+  - src: "/images/products/valentines-day-postcards/valentines-day-postcards-3.webp"
+    alt: "Valentine themed postcard template example"
+  - src: "/images/products/valentines-day-postcards/valentines-day-postcards-4.webp"
+    alt: "Close-up of Valentine postcard print quality"
+
+ctaText: "Browse Valentine Templates for Free"
+ctaLink: "/signup"
+
+description:
+  - "Spread the charm of Valentine’s Day and connect with your farming area in a way they’ll truly cherish. These 6×9 real estate Valentine postcards feature eye-catching designs, thoughtful messaging, and plenty of space for your personalized branding—helping you stay top of mind with homeowners."
+  - "Choose from professionally designed Valentine themes like Strawberry Milkshake recipes, elegant XO layouts, cheerful rainbow greetings, and classic hearts and floral designs. Our all-inclusive pricing covers printing, mailing, and postage, so you can launch your campaign without hidden costs."
+  - "Add a home valuation QR code to generate instant leads and receive notifications the moment it’s scanned. Pair these postcards with your just listed, just sold, or market update campaigns to build consistent visibility and lasting connections in your farm area."
+
+templateExamples:
+  title: "Valentine Postcard Template Examples"
+  examples:
+    - src: "/images/products/valentines-day-postcards/template-1.webp"
+      alt: "Strawberry milkshake Valentine postcard template"
+    - src: "/images/products/valentines-day-postcards/template-2.webp"
+      alt: "XO Valentine postcard template"
+    - src: "/images/products/valentines-day-postcards/template-3.webp"
+      alt: "Rainbow Valentine postcard template"
+    - src: "/images/products/valentines-day-postcards/template-4.webp"
+      alt: "Hearts and flowers Valentine postcard template"
+
+marketingFeatures:
+  title: "A Marketing Solution Built for REALTORS®"
+  features:
+    - title: "Express Editor"
+      description: "Quickly customize Valentine postcard templates with your logo, colors, headshot, and contact info—no design experience needed."
+      icon: "Rocket"
+    - title: "Lead-Generating QR Codes"
+      description: "Include automated home valuation QR codes and get notified instantly when homeowners engage."
+      icon: "Bell"
+    - title: "Smart Mailing Lists"
+      description: "Build targeted lists by radius, subdivision, or custom areas—or upload your own contacts."
+      icon: "Map"
+    - title: "Mail Tracking"
+      description: "Track when postcards are delivered so you can time your follow-ups perfectly."
+      icon: "Database"
+    - title: "All-Inclusive Pricing"
+      description: "Printing, postage, and mailing are included for simple, predictable campaign costs."
+      icon: "Briefcase"
+    - title: "No Minimum Orders"
+      description: "Mail any quantity you want with no minimum requirements or hidden fees."
+      icon: "Truck"
+
+relatedProducts:
+  title: "Explore Our Full Range of Real Estate Postcards"
+  viewAllText: "View All Postcards"
+  viewAllLink: "/products/postcards/real-estate"
+  products:
+    - title: "Just Listed Postcards"
+      image: "/images/products/just-listed/just-listed-1.webp"
+      href: "/products/postcards/just-listed"
+      description: "Announce new listings to the neighborhood"
+    - title: "Just Sold Postcards"
+      image: "/images/products/just-sold/just-sold-1.webp"
+      href: "/products/postcards/just-sold"
+      description: "Share your recent success"
+  allProductLinks:
+    - title: "Just Listed Postcards"
+      href: "/products/postcards/just-listed"
+    - title: "Just Sold Postcards"
+      href: "/products/postcards/just-sold"
+
+faqs:
+  - question: "Why should I use real estate Valentine postcards?"
+    answer: "Valentine postcards create a warm, personal touch that recipients enjoy. They build positive brand recognition without feeling like a hard sales pitch."
+  - question: "How can Valentine postcards help me generate leads?"
+    answer: "You can add a QR code for automated home valuations. When homeowners scan it, you receive instant notifications and actionable seller leads."
+  - question: "Can I customize the postcards with my branding?"
+    answer: "Yes. Wise Pelican’s Express Editor lets you add your logo, colors, headshot, and contact details so every postcard reflects your brand."
+  - question: "How can I track delivery of my postcards?"
+    answer: "Our mail tracking tool shows when postcards are delivered, helping you plan timely follow-ups."
+  - question: "Does Wise Pelican provide mailing lists?"
+    answer: "Yes. You can build targeted lists using radius or subdivision filters, or upload your own contacts."
+  - question: "How do I create an account?"
+    answer: "Sign up on our website for free—no credit card required—and start designing postcards immediately."
+---

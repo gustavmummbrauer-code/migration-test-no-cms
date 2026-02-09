@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Wise Pelican Design System */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Brand Colors - Wise Pelican Palette */
+    --plum: 292 35% 27%;                    /* Deep plum/purple #522e5b */
+    --plum-dark: 292 35% 20%;               /* Darker plum for hover */
+    --plum-light: 292 25% 40%;              /* Lighter plum accent */
+    
+    --teal: 180 50% 57%;                    /* Teal/turquoise #5AC8C8 */
+    --teal-dark: 180 50% 45%;               /* Darker teal for hover */
+    --teal-light: 180 45% 65%;              /* Lighter teal */
+    
+    --cream: 40 33% 96%;                    /* Light cream background */
+    --gray-light: 220 14% 96%;              /* Light gray */
+    --gray-medium: 220 10% 75%;             /* Medium gray */
+    --gray-dark: 220 10% 40%;               /* Dark gray text */
+    
+    /* Semantic Design Tokens */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    --primary: 180 50% 57%;                 /* Teal for primary actions #5AC8C8 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 292 35% 27%;               /* Plum for secondary */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 180 45% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 180 50% 57%;
+
+    --radius: 0.5rem;
+
+    /* Header/Footer specific */
+    --header-bg: 0 0% 100%;
+    --header-foreground: 220 20% 20%;
+    --topbar-bg: 308 56% 19%;              /* #4D1646 */
+    --footer-bg: 308 56% 19%;              /* #4D1646 */
+    --footer-foreground: 0 0% 100%;
+
+    /* Rating stars - gold/amber */
+    --rating: 45 93% 58%;                   /* Gold/amber for star ratings */
+    
+    /* Quote accent - teal for testimonial quotes */
+    --quote-accent: 180 50% 57%;
+    
+    /* Heading accent - magenta for section headings */
+    --heading-accent: 306 57% 38%;          /* #9A2A8E */
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 180 50% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 292 20% 95%;
+    --sidebar-accent-foreground: 292 35% 27%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 180 50% 57%;
+  }
+
+  .dark {
+    --background: 292 35% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 292 35% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 292 35% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 180 50% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 292 25% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 292 20% 18%;
+    --muted-foreground: 220 10% 70%;
+
+    --accent: 180 45% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 292 20% 20%;
+    --input: 292 20% 20%;
+    --ring: 180 50% 57%;
+
+    --header-bg: 292 35% 15%;
+    --topbar-bg: 292 35% 10%;
+    --footer-bg: 292 35% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  /* Decorative curved dotted line */
+  .decorative-line {
+    background-image: url("data:image/svg+xml,%3Csvg width='200' height='50' viewBox='0 0 200 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 25 Q 50 0, 100 25 T 200 25' stroke='%235AC8C8' stroke-width='2' stroke-dasharray='8 6' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  /* Gradient overlays */
+  .gradient-plum {
+    background: linear-gradient(135deg, hsl(292 35% 27%) 0%, hsl(292 35% 35%) 100%);
+  }
+
+  .gradient-teal {
+    background: linear-gradient(135deg, hsl(180 50% 57%) 0%, hsl(180 50% 62%) 100%);
+  }
+
+  /* Hero background with purple gradient */
+  .hero-gradient {
+    background: linear-gradient(180deg, hsl(292 35% 27%) 0%, hsl(292 35% 35% / 0.9) 50%, hsl(292 35% 40% / 0.8) 100%);
+  }
+
+  /* Text highlight for "Proven" style */
+  .text-highlight-teal {
+    @apply text-primary font-bold;
+  }
+
+  /* Trust badge shadow */
+  .trust-badge-shadow {
+    box-shadow: 0 4px 20px -2px hsl(220 10% 50% / 0.15);
+  }
+}
