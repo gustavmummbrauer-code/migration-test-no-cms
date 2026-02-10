@@ -6,43 +6,18 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-   - name: "postcards"
+  - name: "postcards"
     label: "Postcards"
     folder: "content/products/postcards"
     create: true
-    slug: "{{fields.slug}}"
+    slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
     fields:
-      - label: "Product Name"
-        name: "title"
-        widget: "string"
-        hint: 'Example: "Just Sold Postcards"'
-
-      - label: "Price"
-        name: "price"
-        widget: "string"
-        default: "$1.04"
-
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
-        hint: 'Example: "just-sold" (lowercase, use hyphens)'
-
-      - label: "Route"
-        name: "route"
-        widget: "string"
-        default: "/products/postcards/"
-        hint: 'Should look like: /products/postcards/just-sold'
-
-      - label: "SEO Title"
-        name: "seoTitle"
-        widget: "string"
-
-      - label: "SEO Description"
-        name: "seoDescription"
-        widget: "text"
-
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "string", default: "$1.04" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Route", name: "route", widget: "string", default: "/products/postcards/" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string" }
+      - { label: "SEO Description", name: "seoDescription", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
