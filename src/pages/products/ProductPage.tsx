@@ -74,7 +74,7 @@ const ProductPage = ({ slug }: ProductPageProps) => {
   const description = (
     <div className="space-y-4 [&>p]:m-0">
       {content.description.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
+  <p key={index}>{paragraph}</p>
       ))}
     </div>
   );
