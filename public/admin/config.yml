@@ -13,11 +13,91 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Price", name: "price", widget: "string", default: "$1.04" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Route", name: "route", widget: "string", default: "/products/postcards/" }
-      - { label: "SEO Title", name: "seoTitle", widget: "string" }
-      - { label: "SEO Description", name: "seoDescription", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      # ========================
+      # ✅ EDITABLE FIELDS
+      # ========================
+
+      - label: "Title (H1)"
+        name: "title"
+        widget: "string"
+
+      - label: "Slug (must match file name)"
+        name: "slug"
+        widget: "string"
+        hint: "Example: just-sold (no spaces)"
+
+      - label: "SEO Title"
+        name: "seoTitle"
+        widget: "string"
+
+      - label: "SEO Description"
+        name: "seoDescription"
+        widget: "text"
+
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        summary: "{{fields.alt}}"
+        fields:
+          - { label: "Image", name: "src", widget: "image" }
+          - { label: "Alt text", name: "alt", widget: "string" }
+
+      # Your template expects description as an array
+      - label: "Body Copy (paragraphs)"
+        name: "description"
+        widget: "list"
+        field:
+          label: "Paragraph"
+          name: "paragraph"
+          widget: "text"
+
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+
+      # ========================
+      # 🔒 HIDDEN DEFAULTS
+      # ========================
+
+      - { label: "Price", name: "price", widget: "hidden", default: "$1.04" }
+
+      - {
+          label: "Route",
+          name: "route",
+          widget: "hidden",
+          default: "/products/postcards/"
+        }
+
+      - {
+          label: "CTA Text",
+          name: "ctaText",
+          widget: "hidden",
+          default: "Browse All Postcards for Free"
+        }
+
+      - {
+          label: "CTA Link",
+          name: "ctaLink",
+          widget: "hidden",
+          default: "/signup"
+        }
+
+      - label: "Template Examples"
+        name: "templateExamples"
+        widget: "hidden"
+        default:
+          title: "Real Estate Postcard Examples"
+          examples:
+            - { src: "/placeholder.svg", alt: "Template 1" }
+            - { src: "/placeholder.svg", alt: "Template 2" }
+            - { src: "/placeholder.svg", alt: "Template 3" }
+            - { src: "/placeholder.svg", alt: "Template 4" }
+            - { src: "/placeholder.svg", alt: "Template 5" }
+            - { src: "/placeholder.svg", alt: "Template 6" }
+            - { src: "/placeholder.svg", alt: "Template 7" }
+            - { src: "/placeholder.svg", alt: "Template 8" }
