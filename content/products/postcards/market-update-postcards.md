@@ -4,6 +4,9 @@ slug: market-update
 seoTitle: Market Update Postcards
 seoDescription: Mail Real Estate Market Update postcards in minutes. Real Estate
   Market Update Postcards templates designed to get new listings
+images:
+  - src: /images/uploads/just-listed-postcards-1.webp
+    alt: just listed
 description:
   - >-
     Market Update Postcards are an effective way for real estate agents and
