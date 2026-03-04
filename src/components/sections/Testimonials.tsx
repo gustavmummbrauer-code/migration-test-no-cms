@@ -16,21 +16,27 @@ const defaultTestimonials: Testimonial[] = [
     id: "1",
     name: "Gaye Watkins",
     company: "RE/MAX Integrity",
-    content: "We have used them quite a bit recently. Their support is great, their turnaround is really amazing. I put my order in on Thursday and received a copy of the postcard on Tuesday. I will continue using them. GREAT VALUE and ROI",
+    image: "/images/testimonials/Gaye-Watkins.webp",
+    content:
+      "We have used them quite a bit recently. Their support is great, their turnaround is really amazing. I put my order in on Thursday and received a copy of the postcard on Tuesday. I will continue using them. GREAT VALUE and ROI",
     rating: 5,
   },
   {
     id: "2",
     name: "Kim Spencer",
     company: "Leading Edge Real Estate Group",
-    content: "Love the quality of the postcards I've been using (which are generating results!) and the customer service from the Wise Pelican team. I've been a Realtor for 26 years and I believe they are the best of all I've utilized!! I get results in the market and they are the best at quick turnaround of customization!",
+    image: "/images/testimonials/Kim-Spencer-scaled-1.webp",
+    content:
+      "Love the quality of the postcards I've been using (which are generating results!) and the customer service from the Wise Pelican team. I've been a Realtor for 26 years and I believe they are the best of all I've utilized!! I get results in the market and they are the best at quick turnaround of customization!",
     rating: 5,
   },
   {
     id: "3",
     name: "Jen Beasley",
     company: "eXp Realty",
-    content: "LOVE LOVE LOVE the quality of the postcards! We have used Wise Pelican for about 9 months to generate listing opportunities in our Real Estate market. We have been on so many listing appointments where the postcard we sent was sitting on the counter! When we have a question, we are able to chat or even talk by phone with a real person that knows how to solve our problem!",
+    image: "/images/testimonials/Chad-and-Jen.webp",
+    content:
+      "LOVE LOVE LOVE the quality of the postcards! We have used Wise Pelican for about 9 months to generate listing opportunities in our Real Estate market. We have been on so many listing appointments where the postcard we sent was sitting on the counter! When we have a question, we are able to chat or even talk by phone with a real person that knows how to solve our problem!",
     rating: 5,
   },
 ];
@@ -113,10 +119,10 @@ const Testimonials = ({
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="mb-12">
-          <h2 className="text-2xl md:text-[40px] md:leading-tight font-bold text-heading-accent mb-4">{title}</h2>
-          <p className="text-muted-foreground max-w-3xl mb-4">
-            {description}
-          </p>
+          <h2 className="text-2xl md:text-[40px] md:leading-tight font-bold text-heading-accent mb-4">
+            {title}
+          </h2>
+          <p className="text-muted-foreground max-w-3xl mb-4">{description}</p>
           <p className="text-muted-foreground">{subtitle}</p>
         </div>
 
@@ -161,6 +167,10 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+                width={64}
+                height={64}
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-xl font-bold bg-primary/30">
@@ -175,7 +185,9 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <h3 className="font-bold text-sm tracking-wider uppercase truncate">
             {testimonial.name}
           </h3>
-          <p className="text-white/70 text-sm truncate">{testimonial.company || testimonial.role}</p>
+          <p className="text-white/70 text-sm truncate">
+            {testimonial.company || testimonial.role}
+          </p>
         </div>
 
         {/* Quote Icon - using primary/teal color */}
